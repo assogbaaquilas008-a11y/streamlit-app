@@ -829,7 +829,7 @@ with tab_surv:
                         f'<span>{a["cid"]} | {a["region"]}{conf_tag}</span>'
                         f'<span class="ticker-meta">'
                         f'IF={a["score"]:.4f}'
-                        + (f' | LSTM_MSE={a["lmse"]:.4f}' if st.session_state.lstm_ready else '')
+                        + (f' | LSTM_MSE={a["lstm_mse"]:.4f}' if st.session_state.lstm_ready else '')
                         + f' | {a["jour"]} | #{a["count"]}'
                         + f'</span></div>'
                     )
